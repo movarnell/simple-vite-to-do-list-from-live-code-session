@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap");
+
+.playwrite-font {
+  font-family: "Playwrite HR", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.title-color {
+  color: rgb(3, 3, 112);
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.small-dates {
+  font-size: 0.5em;
+  font-weight: bolder;
+}
+
+.red {
+  color:red;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
