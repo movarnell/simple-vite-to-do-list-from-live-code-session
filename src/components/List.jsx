@@ -12,8 +12,16 @@ const List = ({ items, deleteItem }) => {
       </p>
       <p>{item.notes}</p>
 
-      <p className={parseISO(item.dueDate) < new Date() ? "small-dates red" : "small-dates"}>
-       {parseISO(item.dueDate) < new Date() ? "Over": ""} Due: {format(item.dueDate, "d-M-yy h:mm a")}
+      <p
+        data-testid="over-due-element"
+        className={
+          parseISO(item.dueDate) < new Date()
+            ? "small-dates red"
+            : "small-dates"
+        }
+      >
+        {parseISO(item.dueDate) < new Date() ? "Over" : ""} Due:{" "}
+        {format(item.dueDate, "d-M-yy h:mm a")}
       </p>
       <Button variant="danger" onClick={() => deleteItem(item.id)}>
         Delete

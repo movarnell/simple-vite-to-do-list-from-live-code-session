@@ -71,7 +71,7 @@ useEffect(() => {
           <div className="col">
             <Title />
           </div>
-          <div className="col-3 mt-auto mb-3 col-sm-12 text-center">
+          <div className="col-xs-12 col-md-3 mt-auto mb-3 col-sm-12 text-center">
             <Button variant="success w-75" onClick={() => setModalShow(true)}>
               <FiEdit /> Add Item
             </Button>
